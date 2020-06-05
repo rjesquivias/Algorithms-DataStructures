@@ -1,13 +1,17 @@
 #include <iostream>
 #include <cassert>
 #include "Vector/Vector.h"
+#include "Bag/Bag.h"
 using namespace std;
 
 void testVector();
 
+void testBag();
+
 int main()
 {
     testVector();
+    testBag();
     return 0;
 }
 
@@ -75,4 +79,33 @@ void testVector()
     }
     assert(mySecondVec.size() == 161);
     assert(mySecondVec.capacity() == 320);
+}
+
+void testBag()
+{
+    Algos::Bag<int> myBag;
+    assert(myBag.isEmpty());
+    assert(myBag.size() == 0);
+
+    myBag.add(5);
+    myBag.add(3);
+    myBag.add(7);
+    assert(myBag.size() == 3);
+
+    Algos::Bag<int> secondBag;
+    secondBag.add(15);
+    secondBag.add(20);
+
+    myBag = secondBag;
+    assert(myBag.size() == 2);
+
+    Algos::Bag<int> thirdBag(secondBag);
+    assert(thirdBag.size() == 2);
+
+    int c = 0;
+    for(auto x : thirdBag)
+    {
+        c++;
+    }
+    assert(c == thirdBag.size());
 }
