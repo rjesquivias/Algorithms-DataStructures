@@ -30,7 +30,7 @@ public:
 
     virtual ~Bag()
     {
-
+        this->_data.clear();
     }
 
     void operator=(const Bag<E>& other)

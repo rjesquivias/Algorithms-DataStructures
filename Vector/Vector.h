@@ -165,6 +165,27 @@ class Vector
         {
             return iterator(_data + _size);
         }
+
+        class reverseIterator 
+        {
+        public:
+            reverseIterator(E* ptr): ptr(ptr){}
+            reverseIterator operator++() { --ptr; return *this; }
+            bool operator!=(const reverseIterator & other) const { return ptr != other.ptr; }
+            const E& operator*() const { return *ptr; }
+        private:
+            E* ptr;
+        };
+
+        reverseIterator rbegin() const
+        {
+            return reverseIterator(_data + _size - 1);
+        }
+
+        reverseIterator rend() const
+        {
+            return reverseIterator(_data - 1);
+        }
 };
 
 }

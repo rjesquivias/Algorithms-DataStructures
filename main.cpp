@@ -2,16 +2,20 @@
 #include <cassert>
 #include "Vector/Vector.h"
 #include "Bag/Bag.h"
+#include "Stack/VectorStack.h"
 using namespace std;
 
 void testVector();
 
 void testBag();
 
+void testStack();
+
 int main()
 {
     testVector();
     testBag();
+    testStack();
     return 0;
 }
 
@@ -108,4 +112,54 @@ void testBag()
         c++;
     }
     assert(c == thirdBag.size());
+}
+
+void testStack()
+{
+    Algos::VectorStack<int> myStack;
+    assert(myStack.isEmpty());
+
+    for(int i = 0; i < 10; i++)
+    {
+        myStack.push(i);
+        assert(myStack.size() == i + 1);
+    }
+    assert(myStack.size() == 10);
+
+    int value = 9;
+    while(!myStack.isEmpty())
+    {
+        int x = myStack.pop();
+        assert(x == value--);
+    }
+
+    Algos::VectorStack<int> secondStack;
+    secondStack.push(1);
+    secondStack.push(3);
+    secondStack.push(5);
+
+    myStack = secondStack;
+    assert(myStack.pop() == 5);
+    assert(myStack.pop() == 3);
+    assert(myStack.pop() == 1);
+    assert(myStack.isEmpty());
+
+    for(int i = 0; i < 10; i++)
+    {
+        myStack.push(i);
+    }
+    assert(myStack.size() == 10);
+
+    Algos::VectorStack<int> thirdStack(myStack);
+    value = 9;
+    while(!thirdStack.isEmpty())
+    {
+        assert(thirdStack.pop() == value--);
+    }
+
+    value = 9;
+    for(auto x : myStack)
+    {
+        assert(x == value--);
+    }
 }
