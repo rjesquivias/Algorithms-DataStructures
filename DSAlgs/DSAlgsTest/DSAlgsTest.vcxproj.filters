@@ -7,6 +7,15 @@
     <ClCompile Include="pch.cpp">
       <Filter>Setup</Filter>
     </ClCompile>
+    <ClCompile Include="SinglyLinkedListTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="FixedCapacityStackTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicArrayStackTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Tests">

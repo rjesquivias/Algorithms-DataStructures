@@ -138,10 +138,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="DynamicArray.h" />
+    <ClInclude Include="DynamicArrayStack.h" />
+    <ClInclude Include="FixedCapacityStack.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="SinglyLinkedList.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
