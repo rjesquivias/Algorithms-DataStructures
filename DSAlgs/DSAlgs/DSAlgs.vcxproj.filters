@@ -45,5 +45,8 @@
     <ClInclude Include="DynamicArrayStack.h">
       <Filter>Header Files\Stack</Filter>
     </ClInclude>
+    <ClInclude Include="FixedCircularQueue.h">
+      <Filter>Header Files\Queue</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

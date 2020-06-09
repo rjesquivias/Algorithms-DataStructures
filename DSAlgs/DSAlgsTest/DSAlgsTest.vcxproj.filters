@@ -16,6 +16,9 @@
     <ClCompile Include="DynamicArrayStackTest.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
+    <ClCompile Include="FixedCircularQueueTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Tests">
