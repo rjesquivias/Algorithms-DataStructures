@@ -36,6 +36,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DoublyLinkedListTest.cpp" />
     <ClCompile Include="DynamicArrayStackTest.cpp" />
     <ClCompile Include="DynamicArrayTest.cpp" />
     <ClCompile Include="FixedCircularQueueTest.cpp" />

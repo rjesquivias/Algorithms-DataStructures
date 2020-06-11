@@ -19,6 +19,9 @@
     <ClCompile Include="FixedCircularQueueTest.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
+    <ClCompile Include="DoublyLinkedListTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Tests">

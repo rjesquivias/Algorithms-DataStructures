@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DoublyLinkedList.h" />
     <ClInclude Include="DynamicArray.h" />
     <ClInclude Include="DynamicArrayStack.h" />
     <ClInclude Include="FixedCapacityStack.h" />

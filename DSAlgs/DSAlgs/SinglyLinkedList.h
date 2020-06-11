@@ -29,21 +29,11 @@ public:
 		size = 0;
 
 		Node* temp = other.head;
-		int* tempArray = new int[other.size];
-
-		int index = 0;
 		while (temp)
 		{
-			tempArray[index++] = temp->data;
+			push_back(temp->data);
 			temp = temp->next;
 		}
-
-		for (int i = other.size - 1; i >= 0; i--)
-		{
-			push_front(tempArray[i]);
-		}
-
-		delete[] tempArray;
 	}
 
 	~SinglyLinkedList()
@@ -56,21 +46,11 @@ public:
 		clear();
 
 		Node* temp = other.head;
-		int* tempArray = new int[other.size];
-
-		int index = 0;
 		while (temp)
 		{
-			tempArray[index++] = temp->data;
+			push_back(temp->data);
 			temp = temp->next;
 		}
-
-		for (int i = other.size - 1; i >= 0; i--)
-		{
-			push_front(tempArray[i]);
-		}
-
-		delete[] tempArray;
 	}
 
 	void clear()
@@ -90,6 +70,26 @@ public:
 	{
 		Node* newNode = new Node(element, head);
 		head = newNode;
+		size++;
+	}
+
+	void push_back(int element)
+	{
+		if(this->empty())
+		{ 
+			Node* newNode = new Node(element, nullptr);
+			head = newNode;
+		}
+		else
+		{
+			Node* temp = this->head;
+			while (temp && temp->next)
+				temp = temp->next;
+
+			if (temp)
+				temp->next = new Node(element, nullptr);
+		}
+
 		size++;
 	}
 

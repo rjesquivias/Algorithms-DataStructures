@@ -48,5 +48,8 @@
     <ClInclude Include="FixedCircularQueue.h">
       <Filter>Header Files\Queue</Filter>
     </ClInclude>
+    <ClInclude Include="DoublyLinkedList.h">
+      <Filter>Header Files\List</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
