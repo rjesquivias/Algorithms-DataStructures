@@ -22,6 +22,12 @@
     <ClCompile Include="DoublyLinkedListTest.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
+    <ClCompile Include="LinkedStackTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedQueueTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Tests">

@@ -105,7 +105,21 @@ public:
 		{
 			Node* temp = head->next;
 			head->next = temp->next;
-			if (tail->prev == temp) temp->prev = head->next;
+			temp->next->prev = head;
+
+			delete temp;
+			size--;
+		}
+	}
+
+	void pop_back()
+	{
+		if (!empty())
+		{
+			Node* temp = tail->prev;
+			temp->prev->next = tail;
+			tail->prev = temp->prev;
+
 			delete temp;
 			size--;
 		}

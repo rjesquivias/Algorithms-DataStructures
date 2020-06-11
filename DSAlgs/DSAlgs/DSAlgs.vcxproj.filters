@@ -51,5 +51,11 @@
     <ClInclude Include="DoublyLinkedList.h">
       <Filter>Header Files\List</Filter>
     </ClInclude>
+    <ClInclude Include="LinkedStack.h">
+      <Filter>Header Files\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedQueue.h">
+      <Filter>Header Files\Queue</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
