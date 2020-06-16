@@ -25,6 +25,9 @@
     <Filter Include="Header Files\List">
       <UniqueIdentifier>{cb81ea22-2580-4cbc-bcbf-88228433231c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\SymbolTables">
+      <UniqueIdentifier>{1d513d44-1a0d-40f3-ad30-59fef96509a2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DynamicArray.h">
@@ -56,6 +59,12 @@
     </ClInclude>
     <ClInclude Include="LinkedQueue.h">
       <Filter>Header Files\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="SymbolTable.h">
+      <Filter>Header Files\SymbolTables</Filter>
+    </ClInclude>
+    <ClInclude Include="HashTable.h">
+      <Filter>Header Files\SymbolTables</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

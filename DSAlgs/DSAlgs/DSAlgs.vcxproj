@@ -143,11 +143,13 @@
     <ClInclude Include="DynamicArrayStack.h" />
     <ClInclude Include="FixedCapacityStack.h" />
     <ClInclude Include="FixedCircularQueue.h" />
+    <ClInclude Include="HashTable.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="LinkedStack.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="SinglyLinkedList.h" />
     <ClInclude Include="Stack.h" />
+    <ClInclude Include="SymbolTable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

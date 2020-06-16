@@ -40,6 +40,7 @@
     <ClCompile Include="DynamicArrayStackTest.cpp" />
     <ClCompile Include="DynamicArrayTest.cpp" />
     <ClCompile Include="FixedCircularQueueTest.cpp" />
+    <ClCompile Include="HashTableTestcpp.cpp" />
     <ClCompile Include="LinkedQueueTest.cpp" />
     <ClCompile Include="LinkedStackTest.cpp" />
     <ClCompile Include="SinglyLinkedListTest.cpp" />
