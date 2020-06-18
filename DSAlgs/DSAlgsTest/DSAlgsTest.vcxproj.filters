@@ -31,6 +31,9 @@
     <ClCompile Include="HashTableTestcpp.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
+    <ClCompile Include="BinarySearchTreeTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Tests">

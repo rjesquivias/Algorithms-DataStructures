@@ -66,5 +66,8 @@
     <ClInclude Include="HashTable.h">
       <Filter>Header Files\SymbolTables</Filter>
     </ClInclude>
+    <ClInclude Include="BinarySearchTree.h">
+      <Filter>Header Files\SymbolTables</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
