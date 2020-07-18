@@ -69,5 +69,8 @@
     <ClInclude Include="BinarySearchTree.h">
       <Filter>Header Files\SymbolTables</Filter>
     </ClInclude>
+    <ClInclude Include="AVLTree.h">
+      <Filter>Header Files\SymbolTables</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
