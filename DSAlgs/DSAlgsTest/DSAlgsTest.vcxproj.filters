@@ -37,6 +37,9 @@
     <ClCompile Include="AVLTreeTest.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
+    <ClCompile Include="Priority_QueueTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Tests">

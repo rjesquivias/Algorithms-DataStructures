@@ -72,5 +72,8 @@
     <ClInclude Include="AVLTree.h">
       <Filter>Header Files\SymbolTables</Filter>
     </ClInclude>
+    <ClInclude Include="Priority_Queue.h">
+      <Filter>Header Files\Queue</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
